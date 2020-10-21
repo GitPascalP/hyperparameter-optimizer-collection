@@ -1,0 +1,33 @@
+{
+    "agent": "dqn",
+    "memory": 200000,
+    "batch_size": 25,
+    "network": [
+        {
+            "type": "dense",
+            "size": 64,
+            "activation": "relu"
+        },
+        {
+            "type": "dense",
+            "size": 64,
+            "activation": "relu"
+        }
+    ],
+    "update_frequency": 1,
+    "start_updating": 10000,
+    "learning_rate": 0.0001,
+    "discount": 0.99,
+    "exploration": {
+        "type": "decaying",
+        "decay": "polynomial",
+        "decay_steps": 50000,
+        "unit": "timesteps",
+        "initial_value": 1.0,
+        "decay_rate": 0.05,
+        "final_value": 0.05,
+        "power": 3.0
+    },
+    "target_sync_frequency": 1000,
+    "target_update_weight": 1.0
+}
