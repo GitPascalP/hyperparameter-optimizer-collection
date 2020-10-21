@@ -1,4 +1,4 @@
-# hyperparameter-optimization-collection
+# hyperparameter-optimizer-collection
 A small collection of newly implemented hyperparameter optimization algorithms, as well as the use of already implemented algorithms The implementation aims at an application in reinforcement learning, but can easily be adapted for a more general use.
 
 The easiest way to get a working toolbox is, installing:
@@ -11,7 +11,7 @@ The easiest way to get a working toolbox is, installing:
     ``` pip install Tensorforce==0.5.5```
     https://tensorforce.readthedocs.io/en/latest/
     
-and eventually adding the path from the "hyperparametet-optimization-collection" to the 
+and eventually adding the path from the "hyperparameter-optimizer-collection" to the 
 python path to provide no problems with importing files within the toolbox.
 
 
